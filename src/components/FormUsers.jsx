@@ -10,6 +10,8 @@ const FormUsers = ({createUser,updateUserById,objectUpdate,handleSubmit,register
         birthday: "",
         password:""
       }
+
+      //Despliegue de datos de acuerdo a la acción(actualizar o crear)
     
       const submit = data => {
         

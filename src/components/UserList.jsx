@@ -4,6 +4,7 @@ import axios from 'axios'
 
 const UserList = ({user, URL, getAllUsers,setObjectUpdate,setIsShowForm,reset}) => {
 
+    //Eliminando usuario
     const deleteUser = id => {
         axios.delete(`${URL}${id}/`)
           .then(res => {
@@ -12,6 +13,7 @@ const UserList = ({user, URL, getAllUsers,setObjectUpdate,setIsShowForm,reset}) 
           })
           .catch(err => console.log(err))
       }
+      //Datos predeterminados para la actualización
       const updateUser = () => {
         setIsShowForm(true)
     
